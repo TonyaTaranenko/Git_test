@@ -13,9 +13,9 @@
 		var Ext = "less";
 		//var Ext = "css";
 
-		function getUrl(num) {
+		/*function getUrl(num) {
 			return Ext + "/" + Ext + ".style" + num + ".css";
-		}
+		}*/
 
 		function getThemeNumber() {
 			Theme_number = Theme_number % 2 === 0 ? 1 : 2;
@@ -23,12 +23,12 @@
 			return Theme_number;
 		}
 
-		function initialize() {
+		/*function initialize() {
 			var link = document.createElement("link");
 			link.setAttribute("rel", "stylesheet");
 			link.setAttribute("href", getUrl(Default_theme));
 			document.head.appendChild(link);
-		}
+		}*/
 
 		function initListener() {
 			document
@@ -36,11 +36,11 @@
 				.addEventListener("click", changeTheme);
 		}
 
-		function changeTheme() {
+		/*function changeTheme() {
 			document.head
 				.querySelector("link")
 				.setAttribute("href", getUrl(getThemeNumber()));
-		}
+		}*/
 
 		initialize();
 
